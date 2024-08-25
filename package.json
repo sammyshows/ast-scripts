@@ -1,0 +1,16 @@
+{
+  "name": "ast-scripts",
+  "version": "1.0.0",
+  "description": "This repository contains scripts for experimenting with Abstract Syntax Trees (AST) for various languages. It's designed to help understand and visualise how code is interpreted and structured internally by parsers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/parser": "^7.25.4",
+    "@vue/compiler-sfc": "^3.4.38"
+  }
+}

@@ -1,0 +1,42 @@
+# Node.js
+**/node_modules/
+
+# Dependency directories (uncomment if applicable)
+# **/vendor/
+# **/packages/
+
+# Log files and databases
+*.log
+*.sql
+*.sqlite
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Build output directories
+dist/
+build/
+out/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archive files
+*.zip
+*.tar
+*.gz
+
+# Others
+*.tmp
+*.swp
+*~
