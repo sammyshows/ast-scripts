@@ -1,45 +1,26 @@
-// dummy.js
-
-// Simple function declaration
-function greet(name) {
-  console.log(`Hello, ${name}!`);
+// Function to check if a number is even
+function isEven(number) {
+  return number % 2 === 0;
 }
 
-// Using an arrow function with an array method
-const numbers = [1, 2, 3, 4, 5];
-const squares = numbers.map(number => number * number);
-
-// Conditional statement
-if (numbers.length > 3) {
-  console.log("More than three numbers.");
-} else {
-  console.log("Three or less.");
+// Function to process numbers in an array
+function processNumbers(numbers) {
+  numbers.forEach(num => {
+      if (isEven(num)) {
+          console.log(`${num} is even`);
+      } else {
+          console.log(`${num} is odd`);
+      }
+  });
 }
 
-// For loop example
-for (let i = 0; i < numbers.length; i++) {
-  console.log(`Number: ${numbers[i]}`);
+// Main function that orchestrates the flow
+function main() {
+  const numbers = [1, 2, 3, 4, 5, 6];
+  console.log("Processing numbers:");
+  processNumbers(numbers);
+  console.log("All numbers processed.");
 }
 
-// Object manipulation
-const person = {
-  name: "John",
-  age: 30
-};
-
-person.email = "john@example.com";
-
-// Function that returns an object
-function createPerson(name, age) {
-  return {
-      name,
-      age
-  };
-}
-
-// Call the function
-const bob = createPerson("Bob", 25);
-console.log(bob);
-
-// Exporting a function
-module.exports = { greet, createPerson };
+// Call the main function to start the program
+main();
